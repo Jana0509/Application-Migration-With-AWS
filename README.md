@@ -6,7 +6,8 @@ Migrating the On-prem Workload to Cloud is one of the key aspects. This Project 
 
 --------------------------------------------------------
 ### Architecture:
-![Image-Migrate](https://github.com/user-attachments/assets/1397069f-1de2-46f2-a5d3-51252666c1dd)
+![Migration_final_GIF](https://github.com/user-attachments/assets/14150d77-2a16-4e05-bd95-a55fb5db8324)
+
 
 
 --------------------------------------------------------
