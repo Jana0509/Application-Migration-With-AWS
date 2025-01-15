@@ -5,6 +5,7 @@ Migration of Web Server and Database Server to AWS Cloud
 Migrating the On-prem Workload to Cloud is one of the key aspects. This Project demonstrates migrating the  Web server and database server from the On-prem to the AWS Cloud using Rehosting and Replatforming Approach. Web Application is running in on-prem server which is connected to persistent layer [DB layer] which is deployed in other server. Here, we are migrating the application from web server to the EC2 running inside VPC in multiple availability zone for the Secure, High Availability, scalability, fault tolerant and Replatforming the MYSQL DB and its schema content from On-prem server to the AWS Purpose build database layer called RDS Mysql which is deployed in multiple AZ with Master and Standby DBs.
 
 ## Architecture:
+![Image-Migrate](https://github.com/user-attachments/assets/1397069f-1de2-46f2-a5d3-51252666c1dd)
 
 
 
