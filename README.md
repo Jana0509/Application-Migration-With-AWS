@@ -43,3 +43,10 @@ It is a managed migration and replication service that helps move your database 
 5. Launch the Test instances to check whether MGN rehosted the Application correctly. You can verify that our test instance is currently running, with the public IP mapped in the right subnet and VPC. You could also connect to the instance to verify that all files are there.
 
 6. Finally, performed a cutover to the target environment, reconfiguring the application to use the migrated database on RDS.
+
+## Migration Workflow Highlights:
+Rehost (Lift and Shift) : Application has been moved from source environment to the Destination Cloud using Application Migration Service (MGN)
+
+Replatform : Moved the MYSQL Database from Server to the AWS Managed RDS MYSQL using Database Migration Service (DMS)
+
+
