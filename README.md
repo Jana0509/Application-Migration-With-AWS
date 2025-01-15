@@ -9,13 +9,14 @@ Migrating the On-prem Workload to Cloud is one of the key aspects. This Project 
 ![Image-Migrate](https://github.com/user-attachments/assets/1397069f-1de2-46f2-a5d3-51252666c1dd)
 
 
-
+--------------------------------------------------------
 ## Key Components of the Migration:
 **Source Component:**
 Simulated the on prem environment with the web application running in web server and Database running in other server in different VPC.Both were deliberately architected in a non-optimal setup to showcase the modernization that AWS enables (check the architecture diagram).
 **Target Component:**
 Migrated the application to a highly available, well-architected VPC in AWS, spanning two Availability Zones with redundancy and fault tolerance.
 
+--------------------------------------------------------
 ## AWS Services Involved:
 **Application Discovery Service (AWS ADS):**
 It helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers and databases. Application Discovery Service offers two ways of performing discovery and collecting data about your on-premises servers:
@@ -33,6 +34,7 @@ This is the key service which helps in migrating the application from Source Inf
 **Database Migration Service(DMS):**
 It is a managed migration and replication service that helps move your database and analytics workloads to AWS quickly, securely, and with minimal downtime and zero data loss. AWS DMS supports migration between 20-plus database and analytics engines, covering homogeneous (ex. MySQL to MySQL) or heterogeneous (Oracle to PostgreSQL) use cases, and single or continuous replication mode. Here, In this Project, we are replatforming the homogeneous data from on-prem to AWS CLOUD.
 
+--------------------------------------------------------
 ## Steps Taken:
 1. Installed the AWS Discovery Agents in Source Environment Web server and database. It collects static configuration data, detailed time-series system-performance information, inbound and outbound network connections, and processes that are running and send to the Application Discovery Service which can be consolated and view from Migration Hub.
 
@@ -46,11 +48,13 @@ It is a managed migration and replication service that helps move your database 
 
 6. Finally, performed a cutover to the target environment, reconfiguring the application to use the migrated database on RDS.
 
+--------------------------------------------------------
 ## Migration Workflow Highlights:
 **Rehost(Lift and Shift):** Application has been moved from source environment to the Destination Cloud using Application Migration Service (MGN)
 
 **Replatform:** Moved the MYSQL Database from Server to the AWS Managed RDS MYSQL using Database Migration Service (DMS)
 
+--------------------------------------------------------
 ## SUMMARY:
 **1. Discover:**
 1. Initialized and configured AWS Application Discovery service (ADS).
@@ -81,5 +85,6 @@ It is a managed migration and replication service that helps move your database 
 5. Launched the cutover instance, and reconfigured the application to the new target environment
 6. Finalized the cutover process, and executed housekeeping on AWS Application Migration Service (MGN) inventory
 
+--------------------------------------------------------
 ## Conclusion:
 This Project teaches how to migrate the on-prem workloads such as application layer and database layer to the AWS cloud by providing High RTO and RPO. By leveraging MGN, DMS and other Services we are able to move the workload in ease.
