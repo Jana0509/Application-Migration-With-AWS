@@ -15,9 +15,11 @@ Simulated the on prem environment with the web application running in web server
 Migrated the application to a highly available, well-architected VPC in AWS, spanning two Availability Zones with redundancy and fault tolerance.
 
 ## AWS Services Involved:
-# Application Discovery Service (AWS ADS): It helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers and databases. Application Discovery Service offers two ways of performing discovery and collecting data about your on-premises servers:
+# Application Discovery Service (AWS ADS): 
+It helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers and databases. Application Discovery Service offers two ways of performing discovery and collecting data about your on-premises servers:
 
 1. Agentless Discovery Service : can be performed by deploying the Application Discovery Service Agentless Collector (Agentless Collector) (OVA file) through your VMware vCenter.
 2. Agent based Discovery: We are using this approach by installing the agent in the web server and database server, and this agent sends the updates about the usage, configuring data, network in and out, etc.
 
-# Migration Hub : It is the Console where we can visually see the Server usage, network topology for the server and simplifies your migration tracking as it aggregates your migration status information into a single console. You can view the discovered servers, group them into applications, and then track the migration status of each application from the Migration Hub console in your home Region.
+# Migration Hub : 
+It is the Console where we can visually see the Server usage, network topology for the server and simplifies your migration tracking as it aggregates your migration status information into a single console. You can view the discovered servers, group them into applications, and then track the migration status of each application from the Migration Hub console in your home Region.
