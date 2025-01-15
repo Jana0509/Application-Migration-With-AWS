@@ -50,4 +50,5 @@ Rehost (Lift and Shift) : Application has been moved from source environment to 
 
 Replatform : Moved the MYSQL Database from Server to the AWS Managed RDS MYSQL using Database Migration Service (DMS)
 
-
+## Conclusion:
+This Project tells how to migrate the on-prem workloads such as application layer and database layer to the AWS cloud by providing High RTO and RPO. By leveraging MGN, DMS and other Services we are able to move the workload in ease.
