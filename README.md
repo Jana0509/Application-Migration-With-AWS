@@ -25,15 +25,25 @@ It helps you plan your migration to the AWS cloud by collecting usage and config
 1. Agentless Discovery Service : can be performed by deploying the Application Discovery Service Agentless Collector (Agentless Collector) (OVA file) through your VMware vCenter.
 2. Agent based Discovery: We are using this approach by installing the agent in the web server and database server, and this agent sends the updates about the usage, configuring data, network in and out, etc.
 
+   <img width="648" alt="agent status" src="https://github.com/user-attachments/assets/976c1d70-e8cf-4cd5-922f-50a4731ed644" />
+
+
 **Migration Hub :** 
 It is the Console where we can visually see the Server usage, network topology for the server and simplifies your migration tracking as it aggregates your migration status information into a single console. You can view the discovered servers, group them into applications, and then track the migration status of each application from the Migration Hub console in your home Region.
+
+<img width="920" alt="Migration Hub Network" src="https://github.com/user-attachments/assets/7e857030-98d8-47f1-94ca-d61621a0165e" />
+
 
 **Application Migration Service(MGN):**
 This is the key service which helps in migrating the application from Source Infra(on-prem) to the AWS Cloud and it helps in modernize your applications during migration with options such as disaster recovery and operating system or license conversion.
 
+<img width="893" alt="DMS Migration task" src="https://github.com/user-attachments/assets/f61f0de8-0882-4995-a745-b89e47574e5b" />
+
 
 **Database Migration Service(DMS):**
 It is a managed migration and replication service that helps move your database and analytics workloads to AWS quickly, securely, and with minimal downtime and zero data loss. AWS DMS supports migration between 20-plus database and analytics engines, covering homogeneous (ex. MySQL to MySQL) or heterogeneous (Oracle to PostgreSQL) use cases, and single or continuous replication mode. Here, In this Project, we are replatforming the homogeneous data from on-prem to AWS CLOUD.
+
+<img width="951" alt="dms task-table" src="https://github.com/user-attachments/assets/332e1ece-9676-445e-8d78-dfa812b88c49" />
 
 --------------------------------------------------------
 ## Steps Taken:
