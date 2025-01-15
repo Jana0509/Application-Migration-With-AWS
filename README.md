@@ -64,12 +64,12 @@ It is a managed migration and replication service that helps move your database 
 2. Deployed ADS Agent to the source Webserver and DBServer.
 3. Verified that the data collection is started and in healthy condition.
 4. Reviewed the data and the different options in the Migration Hub:
-  * Server list.
-  * Network visualization.
-  * Application grouping.
+  	* Server list.
+  	* Network visualization.
+  	* Application grouping.
 5. Worked with Application groups and tags:
-  * Create application group.
-  * Add or remove servers from the application group.
+  	* Create application group.
+  	* Add or remove servers from the application group.
 
 **2. Re-platform- AWS Database Migration Service(DMS)**
 1. Created a new managed database, using Amazon Relational Database Service (RDS)
