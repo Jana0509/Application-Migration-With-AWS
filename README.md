@@ -23,3 +23,23 @@ It helps you plan your migration to the AWS cloud by collecting usage and config
 
 **Migration Hub :** 
 It is the Console where we can visually see the Server usage, network topology for the server and simplifies your migration tracking as it aggregates your migration status information into a single console. You can view the discovered servers, group them into applications, and then track the migration status of each application from the Migration Hub console in your home Region.
+
+**Application Migration Service(MGN):**
+This is the key service which helps in migrating the application from Source Infra(on-prem) to the AWS Cloud and it helps in modernize your applications during migration with options such as disaster recovery and operating system or license conversion.
+
+
+**Database Migration Service(DMS):**
+It is a managed migration and replication service that helps move your database and analytics workloads to AWS quickly, securely, and with minimal downtime and zero data loss. AWS DMS supports migration between 20-plus database and analytics engines, covering homogeneous (ex. MySQL to MySQL) or heterogeneous (Oracle to PostgreSQL) use cases, and single or continuous replication mode. Here, In this Project, we are replatforming the homogeneous data from on-prem to AWS CLOUD.
+
+## Steps Taken:
+1. Installed the AWS Discovery Agents in Source Environment Web server and database. It collects static configuration data, detailed time-series system-performance information, inbound and outbound network connections, and processes that are running and send to the Application Discovery Service which can be consolated and view from Migration Hub.
+
+2. Replatformed the Database from the On-prem to Managed RDS Instance in Multi-AZ setup using DMS. DMS migrate the table schema and records from source to target in one shot and replicate the live data updates happens at the source environment so that both the environment will be insync.We have created the DMS Replication instance in the public subnet and data from the on-prem synchronize to this instance. Finally, Data will be moved to the RDS MYSQL form the DMS instances.
+
+3. Rehosted the web server using MGN, ensuring seamless block-level replication and minimal impact on the application. MGN simulates the same structure in on-prem to AWS Cloud like If the HDD is attached to the application in On-prem, it also creates the EBS volumes and mount to the EC2 instances. 
+
+4. Customized the target environment by fine-tuning EC2 Launch Templates and configuring NAT Gateways for secure communication.
+
+5. Launch the Test instances to check whether MGN rehosted the Application correctly. You can verify that our test instance is currently running, with the public IP mapped in the right subnet and VPC. You could also connect to the instance to verify that all files are there.
+
+6. Finally, performed a cutover to the target environment, reconfiguring the application to use the migrated database on RDS.
