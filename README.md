@@ -40,6 +40,7 @@ It is a managed migration and replication service that helps move your database 
 
 <img width="648" alt="agent status" src="https://github.com/user-attachments/assets/63385f9b-49a8-4ffe-bbf1-b76254d735e4" />
 
+
 <img width="920" alt="Migration Hub Network" src="https://github.com/user-attachments/assets/b8622ac3-61c5-41ca-b2da-e5f87a91a7b8" />
 
 
@@ -47,7 +48,9 @@ It is a managed migration and replication service that helps move your database 
 
 <img width="893" alt="DMS Migration task" src="https://github.com/user-attachments/assets/a2cf9293-23c1-4638-a0f9-c7346a9560db" />
 
+
 <img width="951" alt="dms task-table" src="https://github.com/user-attachments/assets/6c1ea029-263e-414d-a1af-0f1af8f87e8a" />
+
 
 <img width="952" alt="endpoint-dms" src="https://github.com/user-attachments/assets/63e07fa0-69a2-4dad-b630-3aff2fbe9fef" />
 
@@ -55,6 +58,7 @@ It is a managed migration and replication service that helps move your database 
 3. Rehosted the web server using MGN, ensuring seamless block-level replication and minimal impact on the application. MGN simulates the same structure in on-prem to AWS Cloud like If the HDD is attached to the application in On-prem, it also creates the EBS volumes and mount to the EC2 instances. 
 
 <img width="822" alt="volumes at dest" src="https://github.com/user-attachments/assets/983208a7-34de-45fa-8176-45e913d9999f" />
+
 
 ![image](https://github.com/user-attachments/assets/f8016da1-dc4c-4943-958c-d2bad5aa0c33)
 
@@ -72,6 +76,7 @@ It is a managed migration and replication service that helps move your database 
 6. Finally, performed a cutover to the target environment, reconfiguring the application to use the migrated database on RDS.
 
 <img width="942" alt="Cutover-complete" src="https://github.com/user-attachments/assets/e51ca33b-d10e-49d8-b965-1414e05d2400" />
+
 
 <img width="895" alt="cutover complete" src="https://github.com/user-attachments/assets/4d45007f-6e36-433f-871b-a0fc0dc55b19" />
 
