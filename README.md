@@ -13,6 +13,7 @@ Migrating the On-prem Workload to Cloud is one of the key aspects. This Project 
 ## Key Components of the Migration:
 **Source Component:**
 Simulated the on prem environment with the web application running in web server and Database running in other server in different VPC.Both were deliberately architected in a non-optimal setup to showcase the modernization that AWS enables (check the architecture diagram).
+
 **Target Component:**
 Migrated the application to a highly available, well-architected VPC in AWS, spanning two Availability Zones with redundancy and fault tolerance.
 
