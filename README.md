@@ -46,9 +46,39 @@ It is a managed migration and replication service that helps move your database 
 6. Finally, performed a cutover to the target environment, reconfiguring the application to use the migrated database on RDS.
 
 ## Migration Workflow Highlights:
-Rehost (Lift and Shift) : Application has been moved from source environment to the Destination Cloud using Application Migration Service (MGN)
+**Rehost(Lift and Shift):** Application has been moved from source environment to the Destination Cloud using Application Migration Service (MGN)
 
-Replatform : Moved the MYSQL Database from Server to the AWS Managed RDS MYSQL using Database Migration Service (DMS)
+**Replatform:** Moved the MYSQL Database from Server to the AWS Managed RDS MYSQL using Database Migration Service (DMS)
+
+## SUMMARY:
+**1. Discover:**
+1. Initialized and configured AWS Application Discovery service (ADS).
+	* Set Migration Hub home Region.
+	* Created IAM user and credentials.
+2. Deployed ADS Agent to the source Webserver and DBServer.
+3. Verified that the data collection is started and in healthy condition.
+4. Reviewed the data and the different options in the Migration Hub:
+  * Server list.
+  * Network visualization.
+  * Application grouping.
+5. Worked with Application groups and tags:
+  * Create application group.
+  * Add or remove servers from the application group.
+
+**2. Re-platform- AWS Database Migration Service(DMS)**
+1. Created a new managed database, using Amazon Relational Database Service (RDS)
+2. Created an AWS Database Migration Service (DMS) Replication Instance - that allows you to replicate data between databases
+3. Created the source and target DMS Endpoints
+4. Modified the configuration of the source database to allow for continuous replication of data (binary log)
+5. Started the replication of data through a DMS replication task
+
+**3. Re-host-Application Migration Service**
+1. Initialized and configured AWS Application Migration Service (MGN)
+2. Deployed MGN Agent to the source application server
+3. Customized the EC2 Launch Template to fine tune how the rehosted server would be configured in the target AWS environment
+4. Launched test instance with MGN to validate the rehost process was functional
+5. Launched the cutover instance, and reconfigured the application to the new target environment
+6. Finalized the cutover process, and executed housekeeping on AWS Application Migration Service (MGN) inventory
 
 ## Conclusion:
-This Project tells how to migrate the on-prem workloads such as application layer and database layer to the AWS cloud by providing High RTO and RPO. By leveraging MGN, DMS and other Services we are able to move the workload in ease.
+This Project teaches how to migrate the on-prem workloads such as application layer and database layer to the AWS cloud by providing High RTO and RPO. By leveraging MGN, DMS and other Services we are able to move the workload in ease.
